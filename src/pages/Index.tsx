@@ -21,14 +21,25 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Fixed Call Button */}
-      <a
-        href="tel:+79005016669"
-        className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary/90 text-primary-foreground w-16 h-16 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 animate-fade-in"
-        aria-label="Позвонить"
-      >
-        <Icon name="Phone" size={28} />
-      </a>
+      {/* Fixed Action Buttons */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+        <a
+          href="https://wa.me/79005016669"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#25D366] hover:bg-[#20BA5A] text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 animate-fade-in"
+          aria-label="WhatsApp"
+        >
+          <Icon name="MessageCircle" size={28} />
+        </a>
+        <a
+          href="tel:+79005016669"
+          className="bg-primary hover:bg-primary/90 text-primary-foreground w-16 h-16 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 animate-fade-in"
+          aria-label="Позвонить"
+        >
+          <Icon name="Phone" size={28} />
+        </a>
+      </div>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/10 to-background pt-20 pb-32">
